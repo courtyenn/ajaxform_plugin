@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- I am using inline styling for simplicity -->
+<style>
+	.form label{
+		clear:left;
+		float:left;
+	}
+
+	.form input, .form select{
+		float:left;
+	}
+	input[type="submit"]{
+		clear:left;
+	}
+</style>
+<body>
+<h1>Sign up today!</h1>
+<form id="signup-form" class="form" enctype="multi-part/form-data">
+	<label for="firstname">First Name:</label>
+	<input type="text" value="Courtney" id="firstname" name="first"/>		
+	<label for="lastname" required>Last Name:</label>
+	<input type="text" value="Nguyen" id="lastname" name="last"/>
+	<label for="email" required>Email:</label>
+	<input type="email" value="3Solstice@gmail.com" id="email" name="email"/>
+	<label for="age">Age:</label>
+	<input type="date" id="age" name="age"/>
+	<label for="gender" required>Gender:</label>
+	<select id="gender" name="gender">
+		<option value="Female" selected>Female</option>
+		<option  value="Male">Male</option>
+	</select>
+<!-- 	<label for="prof-pic">Profile picture:</label>
+	<input type="file" id="prof-pic" size="40" accept="image/jpg,image/gif"/> -->
+	<input type="submit" value="Sign-Up"/>
+<!-- 	<fieldset
+	<input type="radio" -->
+</form>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="custom.js"></script>
+</body>
+</html>
